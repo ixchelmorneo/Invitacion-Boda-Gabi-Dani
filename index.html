@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="description" content="Página de boda de Gabriela y Daniel. Encuentra toda la información sobre la ceremonia, fiesta, cómo llegar, y más.">
+    <meta name="keywords" content="boda, Daniel y Daniel, ceremonia, fiesta, Guatemala, regalos, confirmación de asistencia">
+    <meta name="author" content="Ixchel">
+    <meta name="theme-color" content="#C6D7CF">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriela y Daniel</title>
+
+    <!-- Importando CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+     <link rel="stylesheet" href="css/addEvent.css">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/responsive.css">
+
+     <!-- Color para el navegador en móvil -->
+      <meta name="theme-color" content="#fae3d1">
+
+      <!-- Font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Open+Sans:wght@300;400;700&display=swap"
+          rel="stylesheet">
+
+      <!-- Animaciones Lottie -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+
+
+    <!-- Preconexión para optimización de fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<style>
+
+    /* Estilos para el parallax */
+.portada {
+  height: 100vh;
+  background-attachment: fixed; /* Efecto Parallax */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-portada {
+  z-index: 2; /* Aseguramos que el contenido esté encima del fondo */
+}
+
+.portada::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Oscurece ligeramente la imagen */
+  z-index: 1; /* Fondo oscuro detrás del contenido */
+}
+
+.portada img {
+  max-width: 100%;
+  height: auto;
+}
+
+ /* Fondo transparente que cubre toda la pantalla */
+ #modalMusica .modal-dialog {
+    width: 100%;
+    max-width: none; /* Permite que el modal ocupe toda la pantalla */
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #modalMusica .modal-content {
+    background-color: rgba(74, 98, 95, 0.9); /* Fondo con transparencia */
+    border: none; /* Sin borde */
+    width: 100%;
+    height: 100%; /* Hace que el modal cubra toda la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Color del texto en blanco */
+  }
+
+  .music-button {
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.music-button.activo {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+  /* Estilos del cuerpo del modal */
+  #modalMusica .modal-body {
+    text-align: center;
+  }
+  
+</style>
+<body>
+
+
+    <!-- Portada -->
+    <section class="portada py-5">
+        <div class="portada-flor-izq-sup" id="portada-flor-izq-sup"></div>
+        <div class="portada-flor-der-inf" id="portada-flor-der-inf"></div>
+        <div class="portada-flor-izq-inf" id="portada-flor-izq-inf"></div>
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="content-portada text-center">
+                    <!-- Contenido de la portada -->
+                    <div class="box-nombres-fecha-portada">
+                        <span class="fecha">
+                            26.04.2026 
+                        </span>
+                        <div class="box-frase-portada row">
+              
+                    
+                             
+                              <!-- <p>Proverbios 3: 3-4</p>                       -->
+                          <!-- <p>
+                              <img src="img/comilla-apertura.svg" alt="">
+                              Que nunca te abandonen el amor y la verdad: llévalos siempre alrededor de tu cuello y escríbelos en el libro de tu corazón.
+                              <img src="img/comilla-cierre.svg" alt="">
+                          </p> -->
+  
+                      </div>
+                        <h1>
+                            Daniel <br class="d-md-none">
+                            <span>&</span>
+                            <br class="d-md-none">
+                            Gabriela
+                        </h1>
+                        <div class="line"></div>
+                    </div>
+                    <!-- Mensaje -->
+                    <div class="box-frase-portada row">
+                        <div class="col-md-6">
+                          <p><b>Con la bendición de Dios y nuestros padres</b></p>
+                        </div>
+                        <div class="col-md-6">
+                          <p>MAMA (GABY)</p>
+                        </div>
+                            <div class="col-md-6">
+                              <p>MAMA (Dani)</p>
+                            </div>
+                   
+                            <!-- <p>Proverbios 3: 3-4</p>                       -->
+                        <!-- <p>
+                            <img src="img/comilla-apertura.svg" alt="">
+                            Que nunca te abandonen el amor y la verdad: llévalos siempre alrededor de tu cuello y escríbelos en el libro de tu corazón.
+                            <img src="img/comilla-cierre.svg" alt="">
+                        </p> -->
+
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                      <div id="flecha-continuar" style="width: 200px; height: 200px;"></div>
+                  </div>
+                    <!-- Finaliza el contenido de la portada -->
+                    <!-- Flecha para bajar -->
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div id="flecha-continuar" style="width: 200px; height: 200px;"></div>
+                    </div>
+                    <script>
+                        var animation = lottie.loadAnimation({
+                          container: document.getElementById('flecha-continuar'), // ID del contenedor
+                          renderer: 'svg', // Renderizar en SVG
+                          loop: true, // Repetir en bucle
+                          autoplay: true, // Iniciar automáticamente
+                          path: 'source/img/animaciones/scroll-down-white.json' // Ruta del archivo JSON de la animación
+                        });
+                    </script>
+                    <!--END Flecha para bajar -->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+     <!-- End Portada -->
+
+     <!-- Cuenta regresiva -->
+     <section class="cuenta-regresiva">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="box-aros d-flex justify-content-center align-items-center">
+                    <div class="box-circulo text-center">
+                    
+                        <span class="falta">Falta</span>
+                        <div id="reloj" class="reloj">
+                            <div id="dias" class="reloj-col">
+                                <span class="number"></span>
+                                <span class="time">días</span>
+                            </div>
+                            <div id="horas" class="reloj-col">
+                                <span class="number"></span>
+                                <span class="time">hs</span>
+                            </div>
+                            <div id="minutos" class="reloj-col">
+                                <span class="number"></span>
+                                <span class="time">min</span>
+                            </div>
+                            <div id="segundos" class="reloj-col no-border">
+                                <span class="number"></span>
+                                <span class="time">seg</span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div class="d-flex justify-content-center align-items-center">
+                            <!-- Corazón -->
+                            <div id="corazon-falta" class="corazon-falta"></div>
+                            <script>
+                                var animation = lottie.loadAnimation({
+                                  container: document.getElementById('corazon-falta'), // ID del contenedor
+                                  renderer: 'svg', // Renderizar en SVG
+                                  loop: true, // Repetir en bucle
+                                  autoplay: true, // Iniciar automáticamente
+                                  path: 'source/img/animaciones/corazon-falta.json' // Ruta del archivo JSON de la animación
+                                });
+                              </script>
+                              <!-- End corazón -->
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+     <!-- End cuenta regresiva -->
+
+<!-- Salmo Biblico -->
+<section class="galeria">
+
+
+  <div class="container">
+
+
+    <div class="row text-center d-flex justify-content-center align-items-center">
+
+      <div class="content-galeria">
+                   
+        <h2 class="title">Proverbios 3: 3-4</h2>
+        <p class="subtitle">"Que nunca te abandonen el amor y la verdad: llévalos siempre alrededor de tu cuello y escríbelos en el libro de tu corazón."</p>
+        <div class="anim-galeria" id="anim-galeria"></div>
+        <script>
+          var animation = lottie.loadAnimation({
+            container: document.getElementById('anim-galeria'), // ID del contenedor
+            renderer: 'svg', // Renderizar en SVG
+            loop: true, // Repetir en bucle
+            autoplay: true, // Iniciar automáticamente
+            path: 'source/img/animaciones/updated_love_corean.json' // Ruta del archivo JSON de la animación
+          });
+        </script>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="content-fotos">
+
+    <div class="shadow-left"></div>
+    <div class="shadow-right"></div>
+
+    <div class="carrusel slick-initialized slick-slider slick-dotted">
+
+  </div>
+</section>
+  
+<!-- Galeria -->
+  <section class="galeria pb-3">
+    <div id="responsiveCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicadores -->
+      <ol class="carousel-indicators">
+        <li data-target="#responsiveCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#responsiveCarousel" data-slide-to="1"></li>
+        <li data-target="#responsiveCarousel" data-slide-to="2"></li>
+      </ol>
+    
+      <!-- Slides -->
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-6">
+              <img src="https://raw.githubusercontent.com/oscarleonapp/boda-Yetzi-Kevin/refs/heads/main/source/img/galeria/01.JPG" class="d-block w-100 img-thumbnail" alt="Imagen 1" onclick="openModal(this)">
+            </div>
+            <div class="col-6">
+              <img src="https://raw.githubusercontent.com/oscarleonapp/boda-Yetzi-Kevin/refs/heads/main/source/img/galeria/02.jpg" class="d-block w-100 img-thumbnail" alt="Imagen 2" onclick="openModal(this)">
+            </div>
+          </div>
+        </div>
+    
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-6">
+              <img src="https://raw.githubusercontent.com/oscarleonapp/boda-Yetzi-Kevin/refs/heads/main/source/img/galeria/03.JPG" class="d-block w-100 img-thumbnail" alt="Imagen 3" onclick="openModal(this)">
+            </div>
+            <div class="col-6">
+              <img src="https://raw.githubusercontent.com/oscarleonapp/boda-Yetzi-Kevin/refs/heads/main/source/img/galeria/04.jpg" class="d-block w-100 img-thumbnail" alt="Imagen 4" onclick="openModal(this)">
+            </div>
+          </div>
+        </div>
+    
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-6">
+              <img src="https://raw.githubusercontent.com/oscarleonapp/boda-Yetzi-Kevin/refs/heads/main/source/img/galeria/05.JPG" class="d-block w-100 img-thumbnail" alt="Imagen 5" onclick="openModal(this)">
+            </div>
+            <div class="col-6">
+              <img src="https://raw.githubusercontent.com/oscarleonapp/boda-Yetzi-Kevin/refs/heads/main/source/img/galeria/06.jpg" class="d-block w-100 img-thumbnail" alt="Imagen 6" onclick="openModal(this)">
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-6">
+              <img src="https://raw.githubusercontent.com/oscarleonapp/boda-Yetzi-Kevin/refs/heads/main/source/img/galeria/07.jpg" class="d-block w-100 img-thumbnail" alt="Imagen 7" onclick="openModal(this)">
+            </div>
+            <div class="col-6">
+              <img src="https://raw.githubusercontent.com/oscarleonapp/boda-Yetzi-Kevin/refs/heads/main/source/img/galeria/08.jpg" class="d-block w-100 img-thumbnail" alt="Imagen 8" onclick="openModal(this)">
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-6">
+              <img src="https://raw.githubusercontent.com/oscarleonapp/boda-Yetzi-Kevin/refs/heads/main/source/img/galeria/09.jpg" class="d-block w-100 img-thumbnail" alt="Imagen 9" onclick="openModal(this)">
+            </div>
+            <div class="col-6">
+              <img src="https://raw.githubusercontent.com/oscarleonapp/boda-Yetzi-Kevin/refs/heads/main/source/img/galeria/10.JPG" class="d-block w-100 img-thumbnail" alt="Imagen 10" onclick="openModal(this)">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    
+      <!-- Controles -->
+      <div class="carousel-controls">
+        <a class="carousel-control-prev" href="#responsiveCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only" >Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#responsiveCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+      
+    <!-- Modal para visualizar imagen -->
+    <div class="modal fade" id="imageModal-gallery" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Boda Gabriela y Daniel</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <img id="modalImage-2" class="img-fluid" alt="Imagen ampliada">
+          </div>
+        </div>
+      </div>
+    </div>
+       <!-- End Galeria -->
+
+       <!-- Ceremonia y fiesta -->
+<section class="ceremonia-fiesta py-5">
+  <div class="ceremonia-fiesta-flor-der"></div>
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-6 col-ceremonia text-center d-flex flex-column justify-content-center align-items-center">
+        <div class="d-flex justify-content-center align-items-center content-anim-fiesta">
+          <div class="anim-anillos" id="anim-anillos"></div>
+      </div>
+        <script>
+          var animation = lottie.loadAnimation({
+            container: document.getElementById('anim-anillos'), // ID del contenedor
+            renderer: 'svg', // Renderizar en SVG
+            loop: true, // Repetir en bucle
+            autoplay: true, // Iniciar automáticamente
+            path: 'source/img/animaciones/img_ceremonia.json' // Ruta del archivo JSON de la animación
+          });
+        </script>
+
+        <br>
+        <h3 style="font-size: 45px;">Ceremonia y Fiesta</h3>
+        <div class="info-col">
+          <div class="info-box">
+            <h6>Día</h6>
+            <p>Sábado 26 de abril 2026</p>
+            <a href="#" class="boton addeventatc">
+              <span class="nameBtn">Agendar al calendario</span>
+              <span class="start">2026-10-05 17:00:00</span>
+              <span class="end">2026-10-05 17:00:00</span>
+              <span class="timezone">Iztapalapa/CDMX</span>
+              <span class="title">Boda de Gabriela y Daniel</span>
+            </a>
+          </div>
+          <div class="info-box">
+            <h6>Lugar</h6>
+            <p>Luz de Luna</p>
+    <!-- Sección del video responsivo -->
+    <!-- <div class="mt-4 embed-responsive embed-responsive-16by9">
+      <video class="embed-responsive-item" controls>
+        <source src="source/img/cabana-suiza.mov" type="video/mp4">
+      </video>
+    </div> -->
+    <br>
+            <!-- Botón para abrir el modal de confirmar asistencia -->
+
+          </div>
+          <div class="info-box">
+            <h6>Dirección</h6>
+            <p>📍Calle Principal, Iztiapalapa, CDMX.
+            </p>
+
+            <!-- Imagen responsive y con clic para agrandar -->
+            <!-- <img src="source/ubicacion.png" alt="Ubicación" class="img-fluid img-thumbnail" onclick="openImageModal(this)">
+            <p>Toque la imagen para descargarla</p> -->
+            <a href="https://www.google.com/maps?q=19.313346, -98.898964" class="boton modal-como-llegar" target="_blank">Waze / Maps</a>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+<!-- Modal para visualizar la imagen -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="imageModalLabel">Cabaña Suiza</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <img id="modalImage" class="img-fluid" alt="Imagen ampliada">
+      </div>
+      <div class="modal-footer">
+        <!-- Botón de descarga -->
+        <a id="downloadImage" href="#" download class="boton confirmar-asistencia">Descargar Imagen</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</section>
+
+
+
+
+    
+               <!-- Información -->
+       <section class="fiesta">
+
+        <div class="container">
+            <div class="row text-center d-flex justify-content-center align-items-center">
+
+
+
+                 <div class="col-md-12">
+                    <h2 class="title">Fiesta</h2>
+                    <p class="subtitle">Hagamos juntos una fiesta épica. Aquí algunos detalles a tener en cuenta.</p>
+                </div> 
+
+
+                <div class="container pb-5">
+                  <div class="row text-center d-flex justify-content-center align-items-center">
+      
+                      <h2 class="title">Itinerario</h2>
+                      <p class="subtitle">Nuestra ceremonia y fiesta estan programadas de la siguiente manera.</p>
+      
+                        <div class="w-100 d-flex justify-content-center">
+                
+                          <div class="anim-regalos" id="itinerario" style="width: 110px;"></div>
+                          <script>
+                          var animation = lottie.loadAnimation({
+                            container: document.getElementById('itinerario'), // ID del contenedor
+                            renderer: 'svg', // Renderizar en SVG
+                            loop: true, // Repetir en bucle
+                            autoplay: true, // Iniciar automáticamente
+                            path: 'source/img/animaciones/updated_itinerario.json' // Ruta del archivo JSON de la animación
+                          });
+                          </script>
+                        </div>
+      
+                      <br>
+      
+                      <a href="itinerario/index.html" class="boton" target="_blank">Ver itinerario</a>
+      
+                  </div>
+              </div>
+
+              
+
+
+
+
+                <!-- Dress Code -->
+                <div class="col-md-4 item-fiesta">
+
+                    <div
+                        class="w-100 content-item-fiesta d-flex flex-column justify-content-between align-items-center">
+
+                        <h3>Dress Code</h3>
+
+                        <div class="d-flex justify-content-center align-items-center content-anim-fiesta">
+                            <div class="anim-vestuario" id="anim-vestuario"></div>
+                        </div>
+
+                        <p>
+                            Una orientación para <br> tu vestuario </p>
+
+                        <a href="#" class="boton modal-vestuario">
+                            Ver más </a>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <!-- Notas -->
+                <div class="col-md-4 item-fiesta">
+
+                    <div
+                        class="w-100 content-item-fiesta d-flex flex-column justify-content-between align-items-center">
+
+                        <h3>Tips y Notas</h3>
+
+
+                        <div class=" d-flex justify-content-center align-items-center content-anim-fiesta">
+                            <div class="anim-tips" id="anim-tips"></div>
+                        </div>
+
+
+                        <p>
+                            Información adicional <br> para tener en cuenta </p>
+
+
+                        <a href="#" class="boton  modal-tips">
+                            + Info </a>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+        </section>
+        
+        <!-- Regalos -->
+        <section class="regalos">
+
+
+          <div class="regalos-flor-der" id="regalos-flor-der"></div>
+  
+
+              <div class="container py-4">
+              <div class="row text-center d-flex justify-content-center align-items-center">
+  
+                  <h2 class="title">Confirmación <br> & <br> Regalos</h2>
+                  <p class="subtitle">Si deseas regalarnos algo más que tu hermosa presencia...</p>
+  
+                  <div class="w-100">
+  
+                      <div class="anim-regalos" id="anim-regalos"></div>
+  
+                  </div>
+  
+                  <br>
+  
+                  <a href="#" class="boton modal-regalos" style="background-color: #38be82; color: white;">Cuenta Bancaria - Lista Regalos</a>
+                  <div class="py-5"></div>
+                  <a href="#" class="boton modal-confirmar-asistencia" style="background-color: #4a626f; color: white;">Confirmar Asistencia</a>
+                  <!--<p class="subtitle pb-3" style="text-align: justify; background-color: rgb(221, 64, 64); color: white;">LAMENTAMOS INFORMARLE, QUE EL TIEMPO PARA CONFIRMAR SU ASISTENCIA A FINALIZADO.</p>-->
+              </div>
+          </div>
+      </section>
+
+  <!-- Modal confirmar asistencia con Google Forms -->
+<div id="modalAsistencia" class="modal fade" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+          <div class="img-top-modal d-flex justify-content-center align-items-start">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="white-circle-icon">
+                  <img class="" src="img/img_circuloCeremonia.svg" alt="">
+              </div>
+          </div>
+          <div class="modal-header">
+              <h5 class="modal-title">Confirmar Asistencia</h5>
+              adentro
+          </div>
+          <div class="modal-body">
+              <!-- Incrustación del formulario de Google Forms para confirmar asistencia -->
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9hlSt2xPbrjSZUq66wLxx0IuUDPwX29TTilikzt8BT8gW8g/viewform?usp=dialog"
+                  width="100%" height="600px" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+          </div>
+          <div class="modal-footer"></div>
+      </div>
+  </div>
+</div>
+
+    <!-- Sección Instagram con efecto Parallax -->
+    <section class="instagram p-5">
+      <div class="container">
+        <h2 class="title" style="color: white;">Compartimos este día junto a ti</h2>
+        <p class="subtitle">Comparte tus fotos y videos de este hermoso día con nosotros utilizando el hashtag en Instagram o Facebook</p>
+    
+        <div>
+          <div class="anim-instagram" id="anim-instagram"></div>
+          <script>
+            var animation = lottie.loadAnimation({
+              container: document.getElementById('anim-instagram'), // ID del contenedor
+              renderer: 'svg', // Renderizar en SVG
+              loop: true, // Repetir en bucle
+              autoplay: true, // Iniciar automáticamente
+              path: 'img/img_instagram.json' // Ruta del archivo JSON de la animación
+            });
+          </script>
+        </div>
+        <h3 style="color: white;" class="p-2">#bodaDani&Gaby</h3>
+      </div>
+    
+        <br>
+  
+    
+        <!-- <a target="_blank" href="https://www.instagram.com/oscarleonapp/" class="boton">Ver en Instagram</a> -->
+      </div>
+    </section>
+    
+
+  
+  <!-- Modal asistencia-->
+<!-- Modal confirmar asistencia con Google Forms -->
+
+
+<!-- Modal vestuario-->
+<div id="modalVestuario" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="img-top-modal d-flex justify-content-center align-items-start">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+                <div class="white-circle-icon">
+                    <img class="" src="img/vestuario.svg" alt="">
+                </div>
+            </div>
+
+
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">Vestimenta</h5>
+
+            </div>
+
+            <div class="modal-body">
+
+                <p>👔Caballeros: Traje elegante y formal</p>
+                <p>👗Damas: Vestido o vestimenta Elegante y formal</p>
+
+            </div>
+
+
+            <div class="modal-footer"></div>
+
+
+        </div>
+    </div>
+</div>
+<!-- Modal tips-->
+<div id="modalTips" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="img-top-modal d-flex justify-content-center align-items-start">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+                <div class="white-circle-icon">
+                    <img class="" src="img/tips.svg" alt="">
+                </div>
+
+            </div>
+
+
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">Tips y Notas</h5>
+
+            </div>
+
+            <div class="modal-body">
+
+                <p>🚘El parqueo será dentro de las instalaciones de Antigua Hills y tendrá un costo de Q40 por todo el evento.</p>
+                <p>🌳La ceremonia se realizará al aire libre en jardín. </p>
+                <p>🏠La recepción se llevara a cabo en el mismo lugar, en el salón techado.</p>
+                <p>✨Te recordamos que hemos apartado un lugar especial para ti, porfavor respeta el número de invitados que tienes en tu invitación.</p>
+                <p>🔢Al entrar al salón, encontrarás tu número de mesa, para que puedas ubicarte en ella.</p>
+                <p>⛔Te pedimos que durante todo el evento no interrumpas las tomas del fotógrafo/video grafo.</p>
+                <p>🍸Después de la ceremonia puedes pasar por tu cóctel de bienvenida, mientras los novios están en su sesión de fotos.</p>
+
+            </div>
+
+
+            <div class="modal-footer"></div>
+
+
+        </div>
+    </div>
+</div>
+<!-- Modal regalos-->
+<div id="modalRegalos" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="img-top-modal d-flex justify-content-center align-items-start">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+                <div class="white-circle-icon">
+                    <div class="anim-regalos" id="anim-regalos-2"></div>
+                </div>
+                
+            </div>
+
+
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">Regalos</h5>
+
+            </div>
+
+            <div class="modal-body">
+              <p>Tu presencia en nuestra boda es nuestro mejor regalo, sin embargo si deseas apoyarnos en nuestro futuro, te compartimos 2 opciones para que puedas regalarnos un detalle más:</p> 
+              <p>* Puedes regalarnos algo de nuestra lista de Cemaco: <br> <a href="https://www.cemaco.com/list/bodafuentescoronado20250426" target="_blank">Clic para ver la lista</a></p>
+              <p>* Te compartimos nuestra cuenta bancaria:</p>
+                <p><strong>Gabriela</strong>
+                    <br>
+                    Banco BAC
+                    <br>
+                    Cuenta de ahorro
+                    <br>
+                    No.972147482
+                </p>
+                 </div>
+
+            <div class="modal-footer">
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Botón de música con animación Lottie (aparece cuando se ingresa con música) -->
+
+<!--<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>-->
+
+<!-- Footer -->
+
+
+<footer>
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              <p>
+                  Desarrollado por <!--<a href="https://oscarleon.app/"
+                      target="_blank">-->Ixchel</a>
+              </p>
+          </div>
+      </div>
+  </div>
+</footer>
+
+     <!-- SCRIPTS -->
+      <!-- Galeria -->
+       <script src="js/galeria.js"></script>
+
+       <!-- musica -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const audioPlayer = document.getElementById('audioPlayer');
+    const musicButton = document.getElementById('musicButton');
+    const enterWithMusicButton = document.getElementById('enterWithMusicButton');
+    const enterWithoutMusicButton = document.getElementById('enterWithoutMusicButton');
+    const lottiePlayer = document.getElementById('lottie-player');
+    const modal = document.getElementById('modalMusica');
+    let isPlaying = false;
+
+    // Hide the music button initially
+    musicButton.style.display = 'none';
+
+    // Function to close the modal
+    const closeModal = () => {
+      modal.classList.remove('show');
+      modal.style.display = 'none';
+      modal.setAttribute('aria-hidden', 'true');
+      modal.removeAttribute('aria-modal');
+      modal.removeAttribute('role');
+    };
+
+    // Play music and close modal when "Ingresar con música" is clicked
+    enterWithMusicButton.addEventListener('click', () => {
+      audioPlayer.play();
+      isPlaying = true;
+      console.log('Playing music');
+      lottiePlayer.load('img/music-playing-icon.json'); // Change animation to "playing"
+      musicButton.style.display = 'block'; // Show the music button
+      closeModal(); // Close the modal
+    });
+
+    // Just close the modal when "Ingresar sin música" is clicked
+    enterWithoutMusicButton.addEventListener('click', () => {
+      console.log('Entered without music');
+      closeModal(); // Close the modal
+    });
+
+    // Toggle play/pause when the music button is clicked
+    musicButton.addEventListener('click', () => {
+      if (isPlaying) {
+        audioPlayer.pause();
+        console.log('Pausing music');
+        lottiePlayer.load('img/music-player-icon.json'); // Change animation to "paused"
+      } else {
+        audioPlayer.play();
+        console.log('Playing music');
+        lottiePlayer.load('img/music-playing-icon.json'); // Change animation to "playing"
+      }
+      isPlaying = !isPlaying;
+    });
+  });
+</script>
+
+      
+      
+  
+        
+       
+  
+     <!-- Paralax -->
+     <script src="js/jquery-3.5.1.min.js"></script>
+     <script src="js/jquery.cookie.js"></script>
+     <script src="js/parallax.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <!-- <script src="js/slick.min.js"></script> -->
+     <script src="js/jquery.fancybox.min.js"></script>
+
+     <script src="js/cuenta-regresiva.js"></script>
+     <script src="js/portada.js"></script>
+     <!-- <script src="js/noframework.waypoints.min.js"></script> -->
+     <!-- <script src="js/base.js"></script> -->
+      <script src="js/parallax.min.js"></script>
+    <!-- Cambia la imagen de la porta -->
+    <script src="js/portada.js"></script>
+    <!-- Carrusel -->
+    <script>
+        $('.carrusel').slick({
+          lazyLoad: 'ondemand',
+          autoplay: true,
+          autoplaySpeed: 2000,
+          centerMode: true,
+          dots: true,
+          centerPadding: '20px',
+          slidesToShow: 3,
+          prevArrow: false,
+          nextArrow: false,
+          responsive: [{
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+              }
+            }
+          ]
+        });
+      </script>
+
+    
+      <!-- Modal Vestuario -->
+      <script>
+        // Abrir modal
+        $('body').on('click', 'a.modal-vestuario', function(e) {
+    
+          e.preventDefault();
+    
+          $('#modalVestuario').modal({
+            backdrop: 'static'
+          })
+    
+        });
+      </script>
+    
+      <!-- Modal Tips -->
+      <script>
+        // Abrir modal
+        $('body').on('click', 'a.modal-tips', function(e) {
+    
+          e.preventDefault();
+    
+          $('#modalTips').modal({
+            backdrop: 'static'
+          })
+    
+        });
+      </script>
+  
+      <!-- Modal regalos -->
+      <script>
+        // Abrir modal
+        $('body').on('click', 'a.modal-regalos', function(e) {
+    
+          e.preventDefault();
+    
+          $('#modalRegalos').modal({
+            backdrop: 'static'
+          })
+    
+        });
+      </script>
+  
+    
+      <!-- Instagram parallax -->
+      <script>
+        function support_format_webp() {
+            var elem = document.createElement('canvas');
+            if (!!(elem.getContext && elem.getContext('2d'))) {
+                // Si es capaz de renderizar WebP
+                return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
+            }
+            return false;
+        }
+
+        var instagramBackground;
+
+        // Detectar si el navegador soporta WebP
+        if (support_format_webp()) {
+            instagramBackground = 'source/img/galeria/inicio-yk.jpg';
+        } else {
+            instagramBackground = 'source/img/galeria/inicio-yk.jpg';
+        }
+
+        // Asignar la imagen detectada al fondo de la sección Instagram
+        document.querySelector('.instagram').style.backgroundImage = `url(${instagramBackground})`;
+
+        // Animación de Lottie para Instagram
+        var animation = lottie.loadAnimation({
+            container: document.getElementById('anim-instagram'), // ID del contenedor
+            renderer: 'svg', // Renderizar en SVG
+            loop: true, // Repetir en bucle
+            autoplay: true, // Iniciar automáticamente
+            path: 'path/to/your/instagram-animation.json' // Ruta del archivo JSON de la animación
+        });
+    </script>
+    
+
+    
+    
+      <!-- AddEvent script -->
+      <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+    
+    
+      <!-- AddEvent Settings -->
+      <script type="text/javascript">
+        window.addeventasync = function() {
+          addeventatc.settings({
+    
+            css: false,
+    
+            appleical: {
+              show: true,
+              text: "Apple Calendar"
+            },
+            google: {
+              show: true,
+              text: "Google <em>(online)</em>"
+            },
+            office365: {
+              show: true,
+              text: "Office 365 <em>(online)</em>"
+            },
+            outlook: {
+              show: true,
+              text: "Outlook"
+            },
+            outlookcom: {
+              show: true,
+              text: "Outlook.com <em>(online)</em>"
+            },
+            yahoo: {
+              show: true,
+              text: "Yahoo <em>(online)</em>"
+            },
+            facebook: {
+              show: true,
+              text: "Facebook"
+            }
+          });
+        };
+      </script>
+
+
+    <!-- ANIMACIONES -->
+     <!-- Flores -->
+      <!-- Hoja Izquierda Superior-->
+     <script>
+        var animation = lottie.loadAnimation({
+          container: document.getElementById('portada-flor-izq-sup'), // ID del contenedor
+          renderer: 'svg', // Renderizar en SVG
+          loop: true, // Repetir en bucle
+          autoplay: true, // Iniciar automáticamente
+          path: 'img/json_hojas01.json' // Ruta del archivo JSON de la animación
+        });
+    </script>
+    <!-- Hoja Derecha Inferior-->
+    <script>
+        var animation = lottie.loadAnimation({
+          container: document.getElementById('portada-flor-der-inf'), // ID del contenedor
+          renderer: 'svg', // Renderizar en SVG
+          loop: true, // Repetir en bucle
+          autoplay: true, // Iniciar automáticamente
+          path: 'img/json_hojas02.json' // Ruta del archivo JSON de la animación
+        });
+    </script>
+<!-- Hoja Izquierda Inferior-->
+    <script>
+        var animation = lottie.loadAnimation({
+          container: document.getElementById('portada-flor-izq-inf'), // ID del contenedor
+          renderer: 'svg', // Renderizar en SVG
+          loop: true, // Repetir en bucle
+          autoplay: true, // Iniciar automáticamente
+          path: 'img/json_hojas03.json' // Ruta del archivo JSON de la animación
+        });
+    </script>
+
+    <!-- Cuenta regresiva -->
+    <script>
+        var animation = lottie.loadAnimation({
+          container: document.getElementById('cuenta-regresiva'), // ID del contenedor
+          renderer: 'svg', // Renderizar en SVG
+          loop: true, // Repetir en bucle
+          autoplay: true, // Iniciar automáticamente
+          path: 'img/json_hojas03.json' // Ruta del archivo JSON de la animación
+        });
+    </script>
+
+    <!-- Musica -->
+    <script>
+        var animation = lottie.loadAnimation({
+          container: document.getElementById('fiesta'), // ID del contenedor
+          renderer: 'svg', // Renderizar en SVG
+          loop: true, // Repetir en bucle
+          autoplay: true, // Iniciar automáticamente
+          path: 'img/img_musica.json' // Ruta del archivo JSON de la animación
+        });
+    </script>
+
+        <!-- Vestimenta -->
+        <script>
+            var animation = lottie.loadAnimation({
+              container: document.getElementById('anim-vestuario'), // ID del contenedor
+              renderer: 'svg', // Renderizar en SVG
+              loop: true, // Repetir en bucle
+              autoplay: true, // Iniciar automáticamente
+              path: 'img/vestuario.json' // Ruta del archivo JSON de la animación
+            });
+        </script>
+
+        <!-- Tips Notas -->
+        <script>
+            var animation = lottie.loadAnimation({
+              container: document.getElementById('anim-tips'), // ID del contenedor
+              renderer: 'svg', // Renderizar en SVG
+              loop: true, // Repetir en bucle
+              autoplay: true, // Iniciar automáticamente
+              path: 'img/tips.json' // Ruta del archivo JSON de la animación
+            });
+        </script>
+
+        <!-- Tips Regalos -->
+        <script>
+            var animation = lottie.loadAnimation({
+              container: document.getElementById('anim-regalos'), // ID del contenedor
+              renderer: 'svg', // Renderizar en SVG
+              loop: true, // Repetir en bucle
+              autoplay: true, // Iniciar automáticamente
+              path: 'img/img_regalo.json' // Ruta del archivo JSON de la animación
+            });
+        </script>
+            <script>
+            var animation = lottie.loadAnimation({
+              container: document.getElementById('anim-regalos-2'), // ID del contenedor
+              renderer: 'svg', // Renderizar en SVG
+              loop: true, // Repetir en bucle
+              autoplay: true, // Iniciar automáticamente
+              path: 'img/img_regalo.json' // Ruta del archivo JSON de la animación
+            });
+        </script>
+
+        <!-- Tips Regalos -->
+        <script>
+            var animation = lottie.loadAnimation({
+              container: document.getElementById('regalos-flor-der'), // ID del contenedor
+              renderer: 'svg', // Renderizar en SVG
+              loop: true, // Repetir en bucle
+              autoplay: true, // Iniciar automáticamente
+              path: 'img/json_hojas04.json' // Ruta del archivo JSON de la animación
+            });
+        </script>
+
+<!-- Audio oculto -->
+<audio id="audioFondo" src="source/boda.mp3" preload="auto"></audio>
+
+<!-- Botón visual con animación Lottie -->
+<div class="music-button" id="music">
+  <lottie-player id="music-animation" autoplay loop src="img/music-player-icon.json" style="width: 150px; height: 150px;"></lottie-player>
+</div>
+
+<!-- Lottie-player script -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<!-- Script -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var isPlaying = false;
+    var audio = document.getElementById('audioFondo');
+    var musicButton = document.getElementById('music');
+    var musicAnimation = document.getElementById('music-animation');
+
+    musicButton.addEventListener('click', function () {
+      if (isPlaying) {
+        audio.pause();
+        musicAnimation.pause(); // Detiene la animación
+        musicAnimation.seek(0); // La regresa al inicio
+        musicButton.classList.remove('activo'); // Quita la clase activa
+        console.log("Pausado");
+      } else {
+        audio.play().then(() => {
+          musicAnimation.play(); // Reproduce la animación
+          musicButton.classList.add('activo'); // Agrega clase activa
+          console.log("Reproduciendo");
+        }).catch((err) => {
+          console.error("Error al reproducir audio:", err);
+        });
+      }
+      isPlaying = !isPlaying;
+    });
+  });
+</script>
+
+<!-- Script para abrir modal de confirmación -->
+<script>
+    // Abrir modal de confirmación
+    $('body').on('click', 'a.modal-confirmar-asistencia', function(e) {
+        e.preventDefault();
+        $('#modalAsistencia').modal({
+            backdrop: 'static'
+        });
+    });
+</script>
+
+</body>
+</html>
