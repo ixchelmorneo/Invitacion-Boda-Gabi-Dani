@@ -429,11 +429,11 @@ section.cuenta-regresiva{
 
 section.cuenta-regresiva .box-aros{
   width: 470px;
-  height: 470px;
+  height: 455px;/*470*/
   background: url('../img/img_circuloContador01.svg') center center no-repeat;
   position: absolute;
   z-index: 99;
-  top:-200px
+  top:-160px/*200*/
 }
 
 section.cuenta-regresiva .box-aros .box-circulo{
