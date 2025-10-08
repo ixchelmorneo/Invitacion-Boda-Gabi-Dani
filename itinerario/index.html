@@ -30,7 +30,7 @@
 </style>
 <body>
 		        <!-- Portada -->
-				<div data-cue="fadeIn" style="background-image: url(https://oscarleonapp.github.io/boda-Yetzi-Kevin/source/img/galeria/01.JPG); background-position: center center; background-size: cover; background-repeat: no-repeat; animation-name: fadeIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both; position: inherit; background-position-y: -50px; height:40vh;" data-show="true" >
+				<div data-cue="fadeIn" style="background-image: url('../source/img/galeria/01.JPG'); background-position: center center; background-size: cover; background-repeat: no-repeat; animation-name: fadeIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both; position: inherit; background-position-y: -50px; height:40vh;" data-show="true" >
 				</div>
 				 <!-- Portada -->
 		<section id="cd-timeline" class="cd-container">
@@ -66,9 +66,30 @@
 				</div> <!-- cd-timeline-img -->
 	
 				<div class="cd-timeline-content">
-					<h3>Fotos Familiares y Recepción 1:00 a 3:30 pm</h3>
+					<h3>Fotos Familiares 1:00 a 1:30 pm</h3>
 				</div> <!-- cd-timeline-content -->
 			</div> <!-- cd-timeline-block -->
+
+			<!-- Agregado -->
+			 <div class="cd-timeline-block">
+				<div class="cd-timeline-img cd-movie" id="recepcion">
+					<script>
+						var animation = lottie.loadAnimation({
+						  container: document.getElementById('recepcion'), // ID del contenedor
+						  renderer: 'svg', // Renderizar en SVG
+						  loop: true, // Repetir en bucle
+						  autoplay: true, // Iniciar automáticamente
+						  path: '../source/img/animaciones/corazon-3.json' // Ruta del archivo JSON de la animación
+						});
+					  </script>
+				</div> <!-- cd-timeline-img -->
+	
+				<div class="cd-timeline-content">
+					<h3>Recepción 3:00 a 3:30 pm</h3>
+				</div> <!-- cd-timeline-content -->
+			</div> <!-- cd-timeline-block -->
+
+
 	
 			<div class="cd-timeline-block">
 				<div class="cd-timeline-img cd-picture" id="novios">
@@ -156,7 +177,7 @@
 				</div> <!-- cd-timeline-img -->
 	
 				<div class="cd-timeline-content">
-					<h3>Apertura de Baile y Batucada: 5:00 a 10:00 pm</h3>
+					<h3>Apertura de Baile y Batucada: 5:00 a 8:30 pm</h3>
 				</div> <!-- cd-timeline-content -->
 			</div> <!-- cd-timeline-block -->
 
