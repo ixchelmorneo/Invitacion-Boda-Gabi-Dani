@@ -1,4 +1,4 @@
-// Función para verificar el soporte de WebP
+/* Función para verificar el soporte de WebP
 function support_format_webp() {
   var elem = document.createElement('canvas');
   if (!!(elem.getContext && elem.getContext('2d'))) {
@@ -11,4 +11,7 @@ function support_format_webp() {
 window.onload = function () {
   var imageParallax = support_format_webp() ? 'source/img/galeria/inicio-yk.jpg' : 'source/img/galeria/inicio-yk.jpg';
   document.querySelector('.portada').style.backgroundImage = `url(${imageParallax})`;
-};
+};*/
+
+
+
