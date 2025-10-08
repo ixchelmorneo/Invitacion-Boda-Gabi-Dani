@@ -112,29 +112,41 @@
 
 
   /* Estilos para el parallax */
-.portadaPrincipal {
-  height: 100vh;
-  background-attachment: fixed; /* Efecto Parallax */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; /* Añade esto */
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* Estilos para el parallax - CORREGIDOS */
+    .portadaPrincipal {
+        height: 100vh;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* IMAGEN POR DEFECTO - se sobreescribirá con JS */
+        background-image: url('source/img/galeria/inicio-yk.jpg');
+    }
 
-/* Asegúrate de que el pseudo-elemento no bloquee la imagen */
-.portadaPrincipal::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* Oscurece ligeramente la imagen */
-  z-index: 1; /* Fondo oscuro detrás del contenido */
-}
+    .content-portadaPrincipal {
+        z-index: 2;
+        position: relative;
+    }
+
+    .portadaPrincipal::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+    }
+
+    .portadaPrincipal img {
+        max-width: 100%;
+        height: auto;
+    }
   
 </style>
 <body>
