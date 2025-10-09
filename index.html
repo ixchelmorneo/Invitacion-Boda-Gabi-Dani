@@ -42,13 +42,16 @@
     /* Estilos para el parallax */
 .portada {
   height: 100vh;
-  background-attachment: fixed; /* Efecto Parallax */
-  background-size: cover;
-  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;          /* Esto hace la imagen responsive */
+  background-position: center;     /* Centra la imagen */
+  background-repeat: no-repeat;    /* Evita repetición */
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* AGREGA ESTA LÍNEA: */
+  background-image: url('source/img/galeria/inicio-yk.jpg');
 }
 
 .content-portada {
