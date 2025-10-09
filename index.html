@@ -49,6 +49,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* ESTA ES LA LÍNEA MÁS IMPORTANTE QUE FALTA */
+  background-image: url('source/img/galeria/inicio-yk.jpg');
 }
 
 .content-portada {
@@ -107,53 +109,13 @@
   #modalMusica .modal-body {
     text-align: center;
   }
-
-
-
-
-  /* Estilos para el parallax */
-/* Estilos para el parallax - CORREGIDOS */
-    .portadaPrincipal {
-        height: 100vh;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* IMAGEN POR DEFECTO - se sobreescribirá con JS */
-        background-image: url('source/img/galeria/inicio-yk.jpg');
-    }
-
-    .content-portadaPrincipal {
-        z-index: 2;
-        position: relative;
-    }
-
-    .portadaPrincipal::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.4);
-        z-index: 1;
-    }
-
-    .portadaPrincipal img {
-        max-width: 100%;
-        height: auto;
-    }
   
 </style>
 <body>
 
 
     <!-- Portada -->
-    <section class="portadaPrincipal py-5">
+    <section class="portada py-5">
         <div class="portada-flor-izq-sup" id="portada-flor-izq-sup"></div>
         <div class="portada-flor-der-inf" id="portada-flor-der-inf"></div>
         <div class="portada-flor-izq-inf" id="portada-flor-izq-inf"></div>
@@ -1096,32 +1058,6 @@
         } else {
             instagramBackground = 'source/img/galeria/inicio-yk.jpg';
         }*/
-
-        // Función para verificar el soporte de WebP
-function support_format_webp() {
-    var elem = document.createElement('canvas');
-    if (!!(elem.getContext && elem.getContext('2d'))) {
-        return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
-    }
-    return false;
-}
-
-// Aplicar imagen de fondo a la portada cuando la página cargue
-document.addEventListener('DOMContentLoaded', function() {
-    var portadaBackground;
-    
-    // Detectar si el navegador soporta WebP
-    if (support_format_webp()) {
-        portadaBackground = 'source/img/galeria/inicio-yk.jpg'; // Tu imagen WebP si la tienes
-    } else {
-        portadaBackground = 'source/img/galeria/inicio-yk.jpg'; // Misma imagen por ahora
-    }
-    
-    // Asignar la imagen detectada al fondo de la sección PORTADA
-    document.querySelector('.portadaPrincipal').style.backgroundImage = `url(${portadaBackground})`;
-    
-    console.log('Imagen de fondo aplicada:', portadaBackground);
-});
 
         // Asignar la imagen detectada al fondo de la sección Instagram
         document.querySelector('.instagram').style.backgroundImage = `url(${instagramBackground})`;
