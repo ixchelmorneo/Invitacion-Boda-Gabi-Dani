@@ -41,17 +41,32 @@
 
     /* Estilos para el parallax */
 .portada {
-  height: 100vh;
-  background-attachment: fixed;
-  background-size: cover;          /* Esto hace la imagen responsive */
-  background-position: center;     /* Centra la imagen */
-  background-repeat: no-repeat;    /* Evita repetición */
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* AGREGA ESTA LÍNEA: */
-  background-image: url('source/img/galeria/inicio-yk.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('source/img/galeria/inicio-yk.jpg');
+    width: 100%;
+}
+
+/* Efecto parallax solo para escritorio */
+@media (min-width: 769px) {
+    .portada {
+        background-attachment: fixed;
+    }
+}
+
+/* Para móviles - sin efecto parallax pero responsive */
+@media (max-width: 768px) {
+    .portada {
+        background-attachment: scroll;
+        height: 100vh;
+        min-height: 600px;
+    }
 }
 
 .content-portada {
