@@ -39,39 +39,64 @@
 
 <style>
 
-    /* Estilos para el parallax */
-.portada {
-  height: 100vh;
-  background-attachment: fixed; /* Efecto Parallax */
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* ESTA ES LA LÍNEA MÁS IMPORTANTE QUE FALTA */
-  background-image: url('source/img/galeria/inicio-yk.jpg');
-}
+     /* Estilos para el parallax - VERSIÓN RESPONSIVE */
+    .portada {
+        height: 100vh;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('source/img/galeria/inicio-yk.jpg');
+        
+        /* Mejoras para responsive */
+        min-height: 600px; /* Altura mínima para móviles */
+        width: 100%;
+    }
 
-.content-portada {
-  z-index: 2; /* Aseguramos que el contenido esté encima del fondo */
-}
+    .content-portada {
+        z-index: 2;
+        position: relative;
+        width: 100%;
+        max-width: 1200px;
+        padding: 20px;
+    }
 
-.portada::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* Oscurece ligeramente la imagen */
-  z-index: 1; /* Fondo oscuro detrás del contenido */
-}
+    .portada::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+    }
 
-.portada img {
-  max-width: 100%;
-  height: auto;
-}
+    /* Media Queries para diferentes tamaños de pantalla */
+    @media (max-width: 768px) {
+        .portada {
+            height: 100vh;
+            background-attachment: scroll; /* Mejor rendimiento en móviles */
+            background-position: center top;
+        }
+        
+        .content-portada {
+            padding: 15px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .portada {
+            height: 100vh;
+            min-height: 700px;
+            background-size: cover;
+            background-position: 60% center; /* Ajusta según tu imagen */
+        }
+    }
 
  /* Fondo transparente que cubre toda la pantalla */
  #modalMusica .modal-dialog {
