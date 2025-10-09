@@ -39,10 +39,10 @@
 
 <style>
 
-     /* Estilos para el parallax - VERSIÓN RESPONSIVE */
+    /* Estilos para el parallax - VERSIÓN MEJORADA */
     .portada {
         height: 100vh;
-        background-attachment: fixed;
+        background-attachment: fixed; /* Esto crea el efecto parallax */
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -52,9 +52,10 @@
         align-items: center;
         background-image: url('source/img/galeria/inicio-yk.jpg');
         
-        /* Mejoras para responsive */
-        min-height: 600px; /* Altura mínima para móviles */
+        /* Mejoras para el efecto parallax */
+        min-height: 600px;
         width: 100%;
+        overflow: hidden; /* Previene problemas de scroll */
     }
 
     .content-portada {
@@ -76,16 +77,17 @@
         z-index: 1;
     }
 
-    /* Media Queries para diferentes tamaños de pantalla */
+    /* Media Queries para diferentes dispositivos */
+    @media (max-width: 1024px) {
+        .portada {
+            background-attachment: fixed; /* Mantenemos fixed en tablets */
+        }
+    }
+
     @media (max-width: 768px) {
         .portada {
-            height: 100vh;
-            background-attachment: scroll; /* Mejor rendimiento en móviles */
+            background-attachment: fixed; /* Opcional: puedes cambiar a scroll en móviles si hay problemas de rendimiento */
             background-position: center top;
-        }
-        
-        .content-portada {
-            padding: 15px;
         }
     }
 
@@ -93,8 +95,6 @@
         .portada {
             height: 100vh;
             min-height: 700px;
-            background-size: cover;
-            background-position: 60% center; /* Ajusta según tu imagen */
         }
     }
 
