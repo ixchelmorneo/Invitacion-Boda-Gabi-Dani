@@ -39,31 +39,32 @@
 
 <style>
 
-    /* Estilos para el parallax - VERSIÓN MEJORADA */
     .portada {
         height: 100vh;
-        background-attachment: fixed; /* Esto crea el efecto parallax */
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
+        background-image: url('source/img/galeria/inicio-yk.jpg');
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url('source/img/galeria/inicio-yk.jpg');
-        
-        /* Mejoras para el efecto parallax */
-        min-height: 600px;
-        width: 100%;
-        overflow: hidden; /* Previene problemas de scroll */
+        overflow: hidden;
     }
 
-    .content-portada {
-        z-index: 2;
-        position: relative;
+    /* Capa para el efecto parallax */
+    .portada::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        max-width: 1200px;
-        padding: 20px;
+        height: 100%;
+        background-image: url('source/img/galeria/inicio-yk.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        z-index: -1; /* Detrás del contenido */
     }
 
     .portada::before {
@@ -77,25 +78,9 @@
         z-index: 1;
     }
 
-    /* Media Queries para diferentes dispositivos */
-    @media (max-width: 1024px) {
-        .portada {
-            background-attachment: fixed; /* Mantenemos fixed en tablets */
-        }
-    }
-
-    @media (max-width: 768px) {
-        .portada {
-            background-attachment: fixed; /* Opcional: puedes cambiar a scroll en móviles si hay problemas de rendimiento */
-            background-position: center top;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .portada {
-            height: 100vh;
-            min-height: 700px;
-        }
+    .content-portada {
+        z-index: 2;
+        position: relative;
     }
 
  /* Fondo transparente que cubre toda la pantalla */
