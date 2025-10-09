@@ -50,38 +50,27 @@
     align-items: center;
     background-image: url('source/img/galeria/inicio-yk.jpg');
     width: 100%;
-    
-    /* Parallax para escritorio */
-    background-attachment: fixed;
-}
-
-/* Desactivar parallax en móviles por problemas de compatibilidad */
-@media (max-width: 768px) and (hover: none) and (pointer: coarse) {
-    .portada {
-        background-attachment: scroll;
-        /* Fuerza que la imagen se vea bien en móviles */
-        background-position: center top;
-    }
+    /* background-attachment se controlará via JavaScript */
 }
 
 .content-portada {
-  z-index: 2; /* Aseguramos que el contenido esté encima del fondo */
+    z-index: 2;
 }
 
 .portada::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* Oscurece ligeramente la imagen */
-  z-index: 1; /* Fondo oscuro detrás del contenido */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
 }
 
 .portada img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
  /* Fondo transparente que cubre toda la pantalla */
